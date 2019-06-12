@@ -7,12 +7,97 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textWho"
+        android:layout_width="62dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="8dp"
+        android:text="Кому"
+        app:layout_constraintBottom_toTopOf="@+id/editWho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editWho"
+        android:layout_width="240dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textWho" />
+
+    <TextView
+        android:id="@+id/textDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Описание"
+        app:layout_constraintBottom_toTopOf="@+id/editDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWho" />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="187dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSecond"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescription" />
+
+    <Button
+        android:id="@+id/buttonSecond"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:text="ПЕРЕДАТЬ"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFormAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDescription" />
+
+    <ImageButton
+        android:id="@+id/buttonFormAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:onClick="onClickAaboutActivity"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSecond"
+        app:srcCompat="@drawable/kat" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Передача данных"
+        app:layout_constraintBottom_toTopOf="@+id/textWho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.209"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.706" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
